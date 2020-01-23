@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "_Layout1.cshtml";
+    Page.anything = "Hello There";
+}
+@{
+    var price = 50;
+}
+
+@section head{
+    <h1>This is the header of the page.</h1>
+}
+
+@section footer{
+    <h2>This is the footer of the page.</h2>
+    }
+
+<div>
+    <h1>This is our first page !!!!</h1>
+    <h6>H6 tage example.</h6>
+    <a href="http://www.nait.ca">Go to the NAIT website</a>
+    @if (price > 30)
+    {<h2>The price is high.</h2>}
+    else
+    { <h2>The price is good.</h2>}
+</div>
